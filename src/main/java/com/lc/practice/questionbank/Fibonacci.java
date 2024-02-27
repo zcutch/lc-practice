@@ -1,0 +1,28 @@
+package com.lc.practice.questionbank;
+
+/*
+https://leetcode.com/problems/fibonacci-number/description/
+You are given a integer >= 0
+
+Return the Fibonacci number of the input
+
+Example 1
+Input: nums = 3
+Output: 2
+Explanation: F(3) = F(2) + F(1) = F(1) + F(0) + F(1)
+
+Example 2
+Input: nums = 4
+Output: 3
+Explanation: F(4) = F(3) + F(2) = F(2) + F(1) + F(2) = F(1) + F(0) + F(1) + F(2) = F(1) + F(0) + F(1) + F(1) + F(0)
+ */
+
+public class Fibonacci {
+    private int suboptimalSolution(int input) {
+        return 0;
+    }
+
+    private int optimalSolution(int input) {
+        return  0;
+    }
+}
