@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /*
+https://leetcode.com/problems/two-sum/description/
 You are given an array of integer and a target sum of 2 integers
 
 Return a boolean true if two sum found

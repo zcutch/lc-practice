@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /*
+https://leetcode.com/problems/find-all-duplicates-in-an-array/description/
 You are given a 1d array
 
 Find all duplicates in an array.

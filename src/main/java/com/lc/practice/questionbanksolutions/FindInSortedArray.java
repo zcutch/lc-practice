@@ -1,5 +1,6 @@
 package com.lc.practice.questionbanksolutions;
 /*
+https://www.geeksforgeeks.org/binary-search/
 You are given a sorted array of integer and a number to find
 
 Return a boolean true if number is found in array
