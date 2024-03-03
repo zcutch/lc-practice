@@ -1,6 +1,7 @@
 package com.lc.practice.questionbanksolutions;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /*
 You are given a 1d array
@@ -19,7 +20,8 @@ Input: nums = [1,2,3,4,7,8,9,5,1,2,3]
 Output: [1,2,3,5]
  */
 public class DuplicatesInArray {
-    private Set<Integer> suboptimalSolution(int[] input) {
+    // O(n^2) double for loop
+    public static Set<Integer> suboptimalSolution(int[] input) {
         Set<Integer> output = new HashSet<>();
         for (int i = 0; i < input.length; i++) {
             for (int j = i + 1; j < input.length; j++) {
@@ -31,20 +33,13 @@ public class DuplicatesInArray {
         return output;
     }
 
-    private Set<Integer> optimalSolution(int[] input) {
-        Map<Integer, Boolean> cache = new HashMap<>();
-        for (int i : input) {
-            if (cache.containsKey(i)) {
-                cache.put(i, true);
-            } else {
-                cache.put(i, false);
-            }
-        }
+    // O(n) hashset cache
+    public static Set<Integer> optimalSolution(int[] input) {
+        Set<Integer> cache = new HashSet<>();
         Set<Integer> output = new HashSet<>();
-        for (Map.Entry<Integer, Boolean> entry : cache.entrySet()) {
-            Integer key = entry.getKey();
-            Boolean value = entry.getValue();
-            if (value) output.add(key);
+        for (int i : input) {
+            if (cache.contains(i)) output.add(i);
+            cache.add(i);
         }
         return output;
     }

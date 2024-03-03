@@ -1,8 +1,6 @@
 package com.lc.practice.questionbank;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 /*
@@ -23,11 +21,11 @@ Output: [1,2]
 Explanation: 1 is at position 0, 1, 2, and 3, 2 is at position 4 and 6
  */
 public class DuplicatesInArray {
-    private Set<Integer> suboptimalSolution(int[] input) {
+    static Set<Integer> suboptimalSolution(int[] input) {
         return new HashSet<>();
     }
 
-    private Set<Integer> optimalSolution(int[] input) {
+    static Set<Integer> optimalSolution(int[] input) {
         return new HashSet<>();
     }
 }
