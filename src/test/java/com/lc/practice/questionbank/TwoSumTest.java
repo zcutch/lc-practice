@@ -20,7 +20,7 @@ class TwoSumTest {
     @Test
     void doNotFindSuboptimalSolution() {
         int[] input = new int[]{1,3,3,5,6,7,8,9};
-        int find = 5;
+        int find = 2;
         assertEquals(com.lc.practice.questionbanksolutions.TwoSum.suboptimalSolution(input, find), com.lc.practice.questionbank.TwoSum.suboptimalSolution(input, find));
     }
 
