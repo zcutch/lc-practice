@@ -18,7 +18,7 @@ class FibonacciTest {
 
     @Test
     void suboptimalSolution() {
-        assertEquals(Fibonacci.suboptimalSolution(5), com.lc.practice.questionbank.Fibonacci.optimalSolution(5));
+        assertEquals(Fibonacci.suboptimalSolution(5), com.lc.practice.questionbank.Fibonacci.suboptimalSolution(5));
     }
 
     @Test()
