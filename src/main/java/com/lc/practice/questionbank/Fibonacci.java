@@ -19,7 +19,18 @@ Explanation: F(4) = F(3) + F(2) = F(2) + F(1) + F(2) = F(1) + F(0) + F(1) + F(2)
 
 public class Fibonacci {
     static int suboptimalSolution(int input) {
-        return 0;
+        if (input == 0){
+            return 0;
+        }
+        else if (input == 1){
+            return 1;
+        }
+        else if (input == 2){
+            return 1;
+        }
+        else{
+            return suboptimalSolution(input-1) + suboptimalSolution(input-2);
+        }
     }
 
     static int optimalSolution(int input) {

@@ -19,10 +19,31 @@ Explanation: 6 is not in the input array
  */
 public class FindInSortedArray {
     static boolean suboptimalSolution(int[] input, int find) {
+        for (i : input){
+            if (i == find){
+                return true;
+            }
+        }
         return false;
     }
-
+    static boolean splitter(int[] input, int find, int low, int high){
+        if (high < low ){
+            return false;
+        }
+        int mid =  (high + low)/ 2;
+        
+        if input[mid] == find{
+            return true;
+        }
+        if input[mid] < find{
+            return splitter(input, find, mid+1, high)
+        }
+        if input[mid] > find{
+            return splitter(input, find, low, mid-1)
+        }
+    }
     static boolean optimalSolution(int[] input, int find) {
-        return  false;
+        
+        return  splitter(input, find, 0, input.length-1);
     }
 }

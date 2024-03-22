@@ -23,7 +23,17 @@ Explanation: 1 is at position 0, 1, 2, and 3, 2 is at position 4 and 6
  */
 public class DuplicatesInArray {
     static Set<Integer> suboptimalSolution(int[] input) {
-        return new HashSet<>();
+        Set<Integer> hashSet = new HashSet<Integer>();
+        for (int i =0; i<input.length; i++){
+            for (int j = 0; j< input.length; j++){
+                if (i != j){
+                    if(input[i] == input[j]){
+                        hashSet.add(input[i]);
+                    }
+                }
+            }
+        }
+        return hashSet;
     }
 
     static Set<Integer> optimalSolution(int[] input) {

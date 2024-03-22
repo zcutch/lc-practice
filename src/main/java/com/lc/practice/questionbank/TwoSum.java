@@ -19,10 +19,20 @@ Explanation: no two numbers in the array add up to 1
  */
 public class TwoSum {
     static boolean suboptimalSolution(int[] input, int sum) {
+        for (int i = 0; i < nums.length; i++ ){
+            for (int j = 0; j< nums.length; j++){
+                if ( i!= j){
+                    if (input[i]+input[j] == sum){
+                        return true;
+                    }
+                }
+            }
+        }
         return false;
     }
 
     static boolean optimalSolution(int[] input, int sum) {
+        for int
         return  false;
     }
 }
